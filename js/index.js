@@ -1,0 +1,60 @@
+//page 1
+$(function(){
+    $(".lang>.lang1").click(function(){
+        $(".lang>.lang1>.none").css({
+            "display":"block"
+        })
+        $(".lang1").css({
+            "height":100
+        })
+    })
+    $(".foot1>.imgWrap>li").click(function(){
+        $(this).addClass("active1").siblings().removeClass("active1");
+    })
+    $(".foot1>.imgWrap>.s1").on("click",function(){
+        $(".rightWrap>.imgWrap").stop().animate({
+            "margin-left":0
+        },1000)
+        $(".rightWrap>.imgWrap>.b1").addClass("activeb1").siblings().removeClass("activeb1")
+    })
+    $(".foot1>.imgWrap>.s2").on("click",function(){
+        $(".rightWrap>.imgWrap").stop().animate({
+            "margin-left":-33.333+"%"
+        },1000)
+        $(".rightWrap>.imgWrap>.b2").addClass("activeb1").siblings().removeClass("activeb1")
+    })
+    $(".foot1>.imgWrap>.s3").on("click",function(){
+        $(".rightWrap>.imgWrap").stop().animate({
+            "margin-left":-66.666+"%"
+        },1000)
+        $(".rightWrap>.imgWrap>.b3").addClass("activeb1").siblings().removeClass("activeb1")
+    })
+    $(".foot1>.imgWrap>.s4").on("click",function(){
+        $(".rightWrap>.imgWrap").stop().animate({
+            "margin-left":-99.999+"%"
+        },1000)
+        $(".rightWrap>.imgWrap>.b4").addClass("activeb1").siblings().removeClass("activeb1")
+    })
+    $(".foot1>.imgWrap>.s5").on("click",function(){
+        $(".rightWrap>.imgWrap").stop().animate({
+            "margin-left":-133.332+"%"
+        },1000)
+        $(".rightWrap>.imgWrap>.b5").addClass("activeb1").siblings().removeClass("activeb1")
+    })
+})
+//page3
+$(function(){
+    $(".bot3>.acoWrap>li").click(function(){
+        $(this).addClass("acoactive").siblings().removeClass("acoactive");
+    })
+})
+$(function(){
+    var myFull= new fullpage("#fullpage",{
+        sectionsColor:["#199cf4","white","#eee","#199cf4"],
+        menu:"#menu",
+        anchors:["section1","section2","section3","section4"],
+        navigation:true,
+        navigationTooltips:["1","2","3","4"],
+        showActiveTooltip:true
+    })
+})
