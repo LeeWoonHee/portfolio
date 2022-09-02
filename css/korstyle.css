@@ -69,7 +69,6 @@ header>.logo{
     line-height:50px;
     border-radius: 30px;
 }
-/* 클릭시 height:150 .none remove */
 .lang>.lang1>.none{
    display:none;
 }
@@ -155,7 +154,6 @@ margin-left:70px;
     border-radius:30px;
 }
 .foot1>.imgWrap>li>a{
-    /* margin-top:20px; */
     display:block;
     line-height:181px;
     font-size:18px;
@@ -191,7 +189,6 @@ margin-left:70px;
     display:flex;
 }
 .foot2>.imgWrap2>li{
-    /* margin:0 10px; */
     background:white;
     padding:20px;
     border-radius: 30px;
@@ -340,7 +337,7 @@ margin-left:70px;
     position:absolute;
 }
 .boxWrap>.step2{
-    height:380px;
+    height:410px;
     transform:translateY(12%);
 }
 .boxWrap>div>ul>li{
@@ -446,5 +443,4 @@ margin-left:70px;
 }
 .footer{
     height:50vw;
-    /* background-color: black; */
 }
