@@ -1,0 +1,458 @@
+header {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+header .logo {
+  padding-top: 20px;
+}
+header .logo a img {
+  width: 250px;
+}
+
+.menu {
+  width: 50%;
+  padding-top: 4%;
+}
+.menu .menuWrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu .menuWrap li {
+  font-size: 18px;
+  font-weight: bold;
+  height: 42px;
+}
+.menu .menuWrap li .sub {
+  display: block;
+  margin-top: 20px;
+  position: absolute;
+  width: 150px;
+  height: 170px;
+  background: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  left: -50px;
+  transition: 0.5s;
+  opacity: 0;
+  border: 1px solid #ccc;
+}
+.menu .menuWrap li .sub li {
+  padding-top: 2px;
+  line-height: 40px;
+  display: block;
+  transition: 0.3s;
+  opacity: 0;
+}
+.menu .menuWrap li .sub li a {
+  color: #aaa;
+  transition: 0.5s;
+}
+.menu .menuWrap li:nth-child(2) {
+  position: relative;
+}
+.menu .menuWrap li:nth-child(2):hover .sub {
+  opacity: 1;
+}
+.menu .menuWrap li:nth-child(2):hover .sub li {
+  opacity: 1;
+}
+.menu .menuWrap li:nth-child(2):hover .sub li a:hover {
+  color: black;
+}
+
+.lang {
+  padding-top: 4%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.lang .lang1 {
+  background: white;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+}
+.lang .lang1 .none {
+  display: none;
+}
+
+.top1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2% 5%;
+}
+.top1 .leftWrap {
+  width: 50%;
+  height: 65vh;
+}
+.top1 .leftWrap h1 {
+  margin-top: 30px;
+  line-height: 100px;
+  margin-left: 0;
+  font-size: 100px;
+  font-weight: bold;
+}
+.top1 .leftWrap .textBox {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  margin-left: 0;
+}
+.top1 .leftWrap .welcome {
+  margin-top: 170px;
+  margin-left: 0;
+}
+.top1 .leftWrap .welcome img {
+  width: 30%;
+}
+.top1 .rightWrap {
+  width: 50%;
+  height: 65vh;
+  overflow: hidden;
+  max-width: 1920px;
+}
+.top1 .rightWrap .imgWrap {
+  display: flex;
+  width: 233%;
+  padding-top: 300px;
+  box-sizing: border-box;
+}
+.top1 .rightWrap .imgWrap li {
+  text-align: center;
+  width: 33.3333333333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.top1 .rightWrap .imgWrap li img {
+  width: 60%;
+  height: 100%;
+}
+
+.activeb1 {
+  transform: scale(1.8);
+  transform-origin: bottom;
+  transition: 1s;
+}
+
+.foot1 {
+  height: 35vh;
+}
+.foot1 .imgWrap {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 95%;
+  background: white;
+  height: 20vh;
+  border-radius: 30px;
+}
+.foot1 .imgWrap li {
+  width: 305.5px;
+  height: 100%;
+  border-radius: 30px;
+}
+.foot1 .imgWrap li a {
+  display: block;
+  line-height: 181px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #aaa;
+  text-align: center;
+}
+.foot1 .imgWrap li a img {
+  width: 70px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.active1 {
+  background: black;
+  color: white;
+}
+
+.top2 {
+  text-align: center;
+  margin-top: 8%;
+}
+.top2 h1 {
+  font-size: 50px;
+}
+.top2 h2 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.top2 .textBox {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.foot2 .imgWrap2 {
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+}
+.foot2 .imgWrap2 li {
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  transition: 0.7s;
+}
+.foot2 .imgWrap2 li:first-child {
+  box-shadow: 0px 3px 20px 0 rgba(190, 136, 245, 0.12);
+}
+.foot2 .imgWrap2 li:nth-child(2) {
+  box-shadow: 0px 3px 20px 0 rgba(254, 169, 0, 0.1);
+  transform: rotate(-25deg);
+  z-index: 1;
+}
+.foot2 .imgWrap2 li:nth-child(3) {
+  box-shadow: 0px 3px 20px 0 rgba(35, 174, 155, 0.12);
+  transform: rotate(20deg);
+  margin-top: -1%;
+  z-index: 2;
+}
+.foot2 .imgWrap2 li:nth-child(4) {
+  box-shadow: 0px 3px 20px 0 rgba(83, 91, 1, 0.12);
+  transform: rotate(-15deg);
+  z-index: 3;
+}
+.foot2 .imgWrap2 li:last-child {
+  box-shadow: 0px 3px 20px 0 rgba(200, 99, 73, 0.12);
+  transform: rotate(-160deg);
+  z-index: 4;
+}
+.foot2 .imgWrap2 li:hover {
+  transform: rotate(0);
+  transform: scale(1.2);
+  z-index: 10;
+}
+.foot2 .imgWrap2 li .textBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.top3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 8%;
+}
+.top3 h1 {
+  font-size: 50px;
+}
+.top3 p {
+  font-size: 16px;
+}
+
+.bot3 .acoWrap {
+  display: flex;
+  margin: 0 15%;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.bot3 .acoWrap li {
+  background-position: center;
+  height: 450px;
+  width: 10%;
+  margin: 0 5px;
+  border: 7px solid white;
+  border-radius: 20px;
+  text-align: center;
+  transform-origin: left;
+  cursor: pointer;
+  transition: 1s;
+  overflow: hidden;
+}
+.bot3 .acoWrap li .txt {
+  margin-top: 225px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.bot3 .acoWrap li .showTxt {
+  display: none;
+}
+.bot3 .acoWrap li img {
+  width: 50%;
+  height: 120%;
+}
+.bot3 .acoWrap .acoactive {
+  width: 726px;
+  transform: translateY(-10%);
+}
+.bot3 .acoWrap .acoactive .txt {
+  display: none;
+}
+.bot3 .acoWrap .acoactive .showTxt {
+  display: block;
+  text-align: left;
+  color: white;
+  margin-left: 70px;
+  margin-top: 70px;
+  line-height: 20px;
+}
+.bot3 .acoWrap .acoactive .showTxt p {
+  color: #ccc;
+}
+.bot3 .acoWrap .acoactive .showTxt p:first-of-type {
+  margin-top: 20px;
+}
+
+.aco1 {
+  background-image: url(../images/baco1.png);
+}
+
+.aco2 {
+  background-image: url(../images/baco2.png);
+}
+
+.aco3 {
+  background-image: url(../images/baco3.png);
+}
+
+.aco4 {
+  background-image: url(../images/baco4.png);
+}
+
+.aco5 {
+  background-image: url(../images/baco5.png);
+}
+
+.roadmap {
+  font-size: 50px;
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.boxWrap {
+  display: flex;
+  margin: 150px 110px;
+  position: relative;
+}
+.boxWrap .step1, .boxWrap .step2, .boxWrap .step3 {
+  margin: 0 20px;
+  width: 520px;
+  background: white;
+  height: 550px;
+  border-radius: 30px;
+  position: relative;
+}
+.boxWrap div h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.boxWrap div ul li {
+  margin: 20px 20px;
+  font-size: 17px;
+  display: flex;
+}
+.boxWrap div ul li .box {
+  margin: 0 5px;
+  background: #199cf4;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.boxWrap div ul li .nbox {
+  margin: 0 5px;
+  border: 1px solid #199cf4;
+  border-radius: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.boxWrap div img {
+  top: -10px;
+  right: -17px;
+  position: absolute;
+}
+.boxWrap .step2 {
+  height: 450px;
+  transform: translateY(10%);
+}
+.boxWrap .step3 {
+  height: 500px;
+  transform: translateY(15%);
+}
+.boxWrap .more a {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  background: black;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+}
+
+.footer {
+  display: flex;
+  margin-left: 120px;
+}
+.footer .fLogo img {
+  width: 120px;
+}
+.footer .add {
+  line-height: 25px;
+  margin-left: 70px;
+  font-size: 17px;
+}
+.footer .add div {
+  color: white;
+}
+.footer .add p {
+  color: #ccc;
+}
+.footer .add p .rightadd {
+  margin-left: 120px;
+}
+.footer .add p:last-child .right:add {
+  margin-left: 130px;
+}
+.footer .sns {
+  margin-left: 20%;
+}
+.footer .sns .snsWrap {
+  display: flex;
+}
+.footer .sns .snsWrap li {
+  margin: 0 15px;
+}
+.footer .sns .snsWrap li a {
+  background: black;
+  width: 70px;
+  text-align: center;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+}
+.footer .sns .snsWrap li a img {
+  width: 40px;
+  transform: translateY(30%);
+}
+.footer .sns .snsWrap li:nth-child(2) a img, .footer .sns .snsWrap li:nth-child(3) a img {
+  transform: translateY(70%);
+}
+
+.footer {
+  height: 50vw;
+}/*# sourceMappingURL=main.css.map */
